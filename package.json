@@ -1,0 +1,47 @@
+{
+  "name": "eslint-plugin-lets-go-js",
+  "version": "0.1.0",
+  "description": "An ESLint config that aims to help *and not be annoying*",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx eslint --ext js,mjs,cjs example-issues/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Munawwar/eslint-plugin-lets-go-js.git"
+  },
+  "keywords": [
+    "eslint",
+    "configs"
+  ],
+  "author": "Munawwar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Munawwar/eslint-plugin-lets-go-js/issues"
+  },
+  "homepage": "https://github.com/Munawwar/eslint-plugin-lets-go-js#readme",
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true,
+      "es2021": true
+    },
+    "extends": [
+      "plugin:lets-go-js/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2023,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "lets-go-js"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-plugin-lets-go-js": "file:."
+  },
+  "dependencies": {
+    "eslint-plugin-import-x": "^3.1.0"
+  }
+}
