@@ -26,15 +26,15 @@
       "node": true,
       "es2021": true
     },
-    "extends": [
-      "plugin:lets-go-js/recommended"
-    ],
     "parserOptions": {
       "ecmaVersion": 2023,
       "sourceType": "module"
     },
     "plugins": [
       "lets-go-js"
+    ],
+    "extends": [
+      "plugin:lets-go-js/recommended"
     ]
   },
   "devDependencies": {
