@@ -20,3 +20,15 @@ Add following to eslint configuration:
   "extends": ["plugin:lets-go-js/recommended"]
 }
 ```
+
+You can override any of the rules by adding them to your configuration. Example:
+
+```json
+{
+  "plugins": ["lets-go-js"],
+  "extends": ["plugin:lets-go-js/recommended"],
+  "rules": {
+    "no-console": "off"
+  }
+}
+```
