@@ -8,8 +8,8 @@ module.exports = [
       ecmaVersion: 2023,
       sourceType: "module",
       globals: {
-        ...globals.browser,
         ...globals.nodeBuiltins,
+        // ...globals.browser,
       }
     },
     // rules: {

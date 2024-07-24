@@ -37,10 +37,9 @@ module.exports = [
   {
     languageOptions: {
       ecmaVersion: 2023,
-      sourceType: "module",
+      sourceType: "module", // or "commonjs",
       globals: {
-        ...globals.browser,
-        ...globals.nodeBuiltins,
+        ...globals.nodeBuiltins, // or ...globals.browser,
       }
     },
     // Override any of the rules
