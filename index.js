@@ -1,5 +1,10 @@
+const importX = require('eslint-plugin-import-x');
+
 module.exports = {
-  plugins: ['import-x'],
+  name: 'lets-go',
+  plugins: {
+    'import-x': importX,
+  },
   rules: {
     // --- Footguns ---
     // Trying to re-assign a constant is obviously a mistake

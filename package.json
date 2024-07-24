@@ -4,7 +4,7 @@
   "description": "An ESLint config that aims to help *and not be annoying*",
   "main": "index.js",
   "scripts": {
-    "lint": "npx eslint --ext js,mjs,cjs example-issues/"
+    "lint": "npx eslint example-issues/"
   },
   "repository": {
     "type": "git",
@@ -20,25 +20,13 @@
     "url": "https://github.com/Munawwar/eslint-config-lets-go/issues"
   },
   "homepage": "https://github.com/Munawwar/eslint-config-lets-go#readme",
-  "eslintConfig": {
-    "env": {
-      "browser": true,
-      "node": true,
-      "es2021": true
-    },
-    "parserOptions": {
-      "ecmaVersion": 2023,
-      "sourceType": "module"
-    },
-    "extends": ["lets-go"]
-  },
   "devDependencies": {
     "eslint": "^8.57.0",
-    "eslint-plugin-import-x": ">=3",
-    "eslint-config-lets-go": "file:."
+    "eslint-config-lets-go": "file:.",
+    "eslint-plugin-import-x": ">=3"
   },
   "peerDependencies": {
-    "eslint": ">=8",
+    "eslint": "*",
     "eslint-plugin-import-x": ">=3"
   }
 }
