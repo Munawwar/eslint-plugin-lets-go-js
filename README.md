@@ -15,7 +15,7 @@ npm add eslint@8 eslint-config-lets-go eslint-plugin-import-x -D
 Add following to eslint configuration:
 
 For ESLint 8 and below:
-```json
+```js
 {
   "extends": ["lets-go"],
   // Override any of the rules
