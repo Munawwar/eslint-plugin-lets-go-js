@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin-lets-go-js",
+  "name": "eslint-config-lets-go",
   "version": "0.1.0",
   "description": "An ESLint config that aims to help *and not be annoying*",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Munawwar/eslint-plugin-lets-go-js.git"
+    "url": "git+https://github.com/Munawwar/eslint-config-lets-go.git"
   },
   "keywords": [
     "eslint",
@@ -17,9 +17,9 @@
   "author": "Munawwar",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Munawwar/eslint-plugin-lets-go-js/issues"
+    "url": "https://github.com/Munawwar/eslint-config-lets-go/issues"
   },
-  "homepage": "https://github.com/Munawwar/eslint-plugin-lets-go-js#readme",
+  "homepage": "https://github.com/Munawwar/eslint-config-lets-go#readme",
   "eslintConfig": {
     "env": {
       "browser": true,
@@ -30,18 +30,15 @@
       "ecmaVersion": 2023,
       "sourceType": "module"
     },
-    "plugins": [
-      "lets-go-js"
-    ],
-    "extends": [
-      "plugin:lets-go-js/recommended"
-    ]
+    "extends": ["lets-go"]
   },
   "devDependencies": {
     "eslint": "^8.57.0",
-    "eslint-plugin-lets-go-js": "file:."
+    "eslint-plugin-import-x": ">=3",
+    "eslint-config-lets-go": "file:."
   },
-  "dependencies": {
-    "eslint-plugin-import-x": "^3.1.0"
+  "peerDependencies": {
+    "eslint": ">=8",
+    "eslint-plugin-import-x": ">=3"
   }
 }
