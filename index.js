@@ -14,7 +14,7 @@ module.exports = {
     'no-constant-condition': 'error',
     // Another possible copy-pasta issue
     'no-dupe-keys': 'error',
-    // Adding a string argument to setTier() causes an eval(). This is most likely a mistake
+    // Adding a string argument to setTimeout() causes an eval(). This is most likely a mistake
     'no-implied-eval': 'error',
     // Many a times, shadowing happens because you didn't pay attention that
     // another variable was already defined
