@@ -38,8 +38,6 @@ module.exports = {
     // with rare exceptions, like importing global environment linked dependencies like '@aws-sdk/x'
     // this is most likely catches a mistake
     'import-x/no-extraneous-dependencies': 'error',
-    // Ensures imports are the top of the file.
-    'import-x/first': 'error',
     // It is very rare that you actually need a cyclical dependencies. Most likely this was a mistake
     'import-x/no-cycle': 'error',
     // Why would you ever import self?
@@ -55,5 +53,9 @@ module.exports = {
     'no-console': ['error', {
       allow: ['warn', 'error']
     }],
+    // Imports are hoisted (which means the imported modules will be evaluated before any of the statements interspersed between them)
+    // This is not a problem if you are aware of it. But to prevent potential issues + for keeping clarity / cleanliness I
+    // prefer imports at the top of the file.
+    'import-x/first': 'error',
   }
 };

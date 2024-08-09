@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-lets-go",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "An ESLint config that aims to help *and not be annoying*",
   "main": "index.js",
   "scripts": {
